@@ -9,6 +9,7 @@
 <body>
     <h1>Reserva tu bicicleta</h1>
     <br>
+    
     <nav>
 
         <a href="./index.html">Volver a la página principal</a></li>
@@ -23,11 +24,47 @@
     <li>Sabados y domingos de 6:00 am a 9:00 pm</li>
     </ol>  
 <br>
-<p><a href="#horarios">Formulario de reserva</a></p>
+<h3><a href="#horarios">Formulario de reserva</a></h3>
+<div>
+    <h4> Tus datos </h4>
+    <form action="procesar_reserva.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required><br><br>
+<div>
+<div>
+    <h4> tu arquiler </h4>        
+
+        <label for="fecha">Fecha de reserva:</label>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+
+        <label for="hora">Hora de reserva:</label>
+        <input type="time" id="hora" name="hora" required><br><br>
+</div>
+<div>
+    <h4> confirmar reserva </h4>
+     <label for="confirmar">confirmar reserva dos horas antes:</label>
+        <input type="checkbox" id="confirmar" name="confirmar"><br><br>
+</div>
+
+        <label for="tipo_bicicleta">Tipo de bicicleta:</label>
+        <select id="tipo_bicicleta" name="tipo_bicicleta">
+            <option value="estandar">Estándar</option>
+            <option value="lujo">Lujo</option>
+            <option value="electrica">Eléctrica</option>
+        </select><br><br>
+        <input type="submit" value="Reservar">
+    </form>
+</div>
 
 <footer>
     <ol>
-        <li><a href="./pag/index.html"rueda libre</li>
+        <li><a href="./pag/index.html">Rueda Libre</a></li>
         <li><a href="mailto:info@ruedalibre.com">Correo electrónico</a></li>
         <li><a href="https://wa.me/573001234567" target="_blank">WhatsApp</a></li>
     </ol>
