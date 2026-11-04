@@ -10,8 +10,8 @@
 body {
     background-color: var(--background-color);
     color: var(--color-text);
-    margin: 0;
-    padding: 0;
+    margin: 5rem;
+    padding: 5rem;
     letter-spacing: 3px; /* Separa las letras */
 }   
 
@@ -30,4 +30,83 @@ span, label, input, button {
     font-family: var(--text);
     font-weight: 600;
     color: var(--color-botton);
+}
+
+.tarjeta {
+    border: 1px solid var(--color-botton);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: #fff;
+}
+
+#filas {
+    background-color: var(--color-botton);
+    color: #fff;
+}
+
+#columnas {
+    background-color: var(--color-botton);
+    color: #fff;
+}
+
+#nombre {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#correo {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#telefono {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#fecha {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#hora {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#confirmar {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#tipo_bicicleta {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+#reservar {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+#confirmar {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.tus_datos {
+    border: 1px solid var(--color-botton);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: #fff;
+}
+
+.tu_reserva {
+    border: 1px solid var(--color-botton);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: #fff;
 }
