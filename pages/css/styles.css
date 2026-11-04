@@ -1,0 +1,33 @@
+:root {
+    --title: "Montserrat";
+    --text: "Open Sans";
+    --background-color: #FAF6EF;
+    --color-title: #f39a2b;
+    --color-text: #14213d;
+    --color-botton: #1e7a47;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+    letter-spacing: 3px; /* Separa las letras */
+}   
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title);
+    font-weight: 700;  
+    color: var(--color-title);
+}
+
+p, li, td, th {
+    font-family: var(--text);
+    font-weight: 400;
+}
+
+span, label, input, button {
+    font-family: var(--text);
+    font-weight: 600;
+    color: var(--color-botton);
+}

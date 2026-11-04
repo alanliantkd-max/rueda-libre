@@ -42,4 +42,21 @@ Mezcle gris asfalto con crema y me dio 5.5(texto segundario)
 mezcle verde ruta con crema y me dio 4.9(fondo general)
 Mezcle naranja pedal con crema y me dio 2.05
 Mezcle blanco con azul noche y me dio 15.9(texto segundario) 
+### Aprendizaje
+comenzar a utilizar el CSS
+
+### Proximo paso 
+profundizar en lo aprnedido de CSS
+   
+
+## dia 3 - 04/11/2026
+
+### Objetivo
+utilizar lo aprendido de CSS y profundizar en que es una fuente y como se crean los vinculos en CSS
+
+### Actividades realizadas
+Crear vinculos, con propiedades en CSS
+
+encontre que en la pagina index.html en la etiqueta h2encuentranosh2 esta heredado el espacio entre letra y letra, tambine encontre que no heredo 
+
 
