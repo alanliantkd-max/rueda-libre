@@ -12,8 +12,8 @@
 <body>
     <h1>Reserva tu bicicleta</h1>
     <br>
-
-    <nav>
+    
+    <nav class="tus_datos">
 
         <a href="./index.html">Volver a la página principal</a></li>
         <a href="./pag/tarifas.html">Visita nuestras tarifas</a></li>
@@ -27,7 +27,10 @@
         <li>Sabados y domingos de 6:00 am a 9:00 pm</li>
     </ol>
     <br>
-    <h3><a href="#horarios">Formulario de reserva</a></h3>
+    <div class="tus_datos">
+        <h2>Recuerda que</h2>
+        <p>Para reservar tu bicicleta, completa el siguiente formulario con tus datos y la información de la reserva.</p>
+    
     <section class="tus_datos">
         <h4> Tus datos </h4>
         <form action="procesar_reserva.php" method="post">
@@ -54,10 +57,20 @@
             <label for="tipo_bicicleta">Tipo de bicicleta:</label>
             <br>
             <select id="tipo_bicicleta" name="tipo_bicicleta" required>
-                <option value="">Selecciona un tipo</option>
+                <option value="">Ciclas_disponibles</option>
                 <option value="estandar">Estandar</option>
                 <option value="lujo">Lujo</option>
                 <option value="electrica">Electrica</option>
+            </select><br><br>
+        </div>
+                <div id="tipo_de_recorrido">
+            <label for="tipo_de_recorrido">Tipo de recorrido:</label>
+            <br>
+            <select id="tipo_de_recorrido" name="tipo_de_recorrido" required>
+                <option value="">Rutas disponibles</option>
+                <option value="estandar">Rio y parque</option>
+                <option value="lujo">Sabores del Barrio</option>
+                <option value="electrica">Reto palmas</option>
             </select><br><br>
         </div>
         <div id="fecha">
@@ -73,22 +86,27 @@
             <h4> confirmar reserva </h4>
             <label for="confirmar">confirmar reserva dos horas antes:</label>
             <br>
-            <input type="checkbox" id="confirmar" name="confirmar"><br><br>
+             <input type="submit" value="Reservar" id="confirmar" name="confirmar">
         </div>
         </div>
+    </section>
         <br>
-        <input type="submit" value="Reservar">
         </form>
         </div>
     </section>
 
-        <footer>
+        <footer class="tus_datos">
+            <h2>Contactanos</h2>
+            <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos a través de los siguientes medios:</p>
             <ol>
                 <li><a href="./pag/index.html">Rueda Libre</a></li>
                 <li><a href="mailto:info@ruedalibre.com">Correo electrónico</a></li>
                 <li><a href="https://wa.me/573001234567" target="_blank">WhatsApp</a></li>
             </ol>
         </footer>
+    <a href="https://wa.me/573000000000" target="_blank" class="whatsapp-fijo">
+  <i class="fab fa-whatsapp"></i> WhatsApp
+</a>   
 </body>
 
 </html>
