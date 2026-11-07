@@ -212,3 +212,16 @@ span, label, input, button {
     position: relative;
     top: 1%;
 }
+
+.imagenesquienes_somos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10rem;
+}
+.pieruedalibre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10rem;
+}
