@@ -142,3 +142,67 @@ span, label, input, button {
   font-weight: bold;
   z-index: 1000;
 }   
+
+.nuevo {
+    background-color: var(--color-botton);
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    position: relative;
+    top: 65px;
+    left: 85%;
+
+}
+
+.nuetros_servicios {
+     border: 1px solid var(--color-botton);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    position:absolute;
+    top: 10rem;
+    width: 100%;
+    
+}
+
+.encabezados {    
+    border: 1px solid var(--color-botton);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: #fff;
+}
+
+.encuentranos {
+    border: 1px solid var(--color-botton);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: #fff;
+}   
+#ruedalibre {
+    text-align: left;
+    position: absolute;
+}
+
+#listadelinkruedalibre{
+     position: relative;
+    top: 15px;
+    left: 25%;
+}
+
+.tarifas{
+    display: flex;
+}
+.recorridos{
+    position: relative;
+    top: 28%
+}
+
+.tabla{
+    position: relative;
+    top: 1%;
+}
