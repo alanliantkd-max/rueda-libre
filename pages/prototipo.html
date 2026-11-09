@@ -1,15 +1,79 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rueda Nocturna</title>
+
+    <!-- Conectar Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
-  <body>
-    <nav>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    </nav>
-  </body>
+
+</head>
+
+<body class="bg-gray-900 text-white">
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="min-h-screen flex justify-center items-center p-6">
+
+        <!-- SECCION PRINCIPAL -->
+        <section class="text-center">
+
+            <!-- ETIQUETA DE CAMPAÑA -->
+            <p class="text-green-400 font-bold uppercase">
+                Nuevo - Jueves a sábado
+            </p>
+
+            <!-- TITULO PRINCIPAL -->
+            <h1 class="text-5xl font-bold mt-4">
+                Rueda Nocturna
+            </h1>
+
+            <!-- SUBTITULO -->
+            <p class="text-gray-300 text-xl mt-4">
+                En Medellín, la ciudad se enciende en luces.
+            </p>
+
+            <!-- DATOS DESTACADOS -->
+            <div class="flex justify-center gap-10 mt-8">
+
+                <!-- PRIMER DATO -->
+                <div>
+                    <h2 class="text-3xl font-bold text-green-400">
+                        3
+                    </h2>
+
+                    <p class="text-gray-300">
+                        Rutas
+                    </p>
+                </div>
+
+                <!-- SEGUNDO DATO -->
+                <div>
+                    <h2 class="text-3xl font-bold text-green-400">
+                        $55.000
+                    </h2>
+
+                    <p class="text-gray-300">
+                        Desde
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- BOTON DE INSCRIPCION -->
+            <a href="#reservas"
+               class="inline-block bg-green-500 text-white font-bold px-8 py-4 rounded-lg mt-8">
+
+                Inscríbete
+
+            </a>
+
+        </section>
+
+    </main>
+
+</body>
 </html>
