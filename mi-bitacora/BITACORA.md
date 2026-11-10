@@ -59,4 +59,12 @@ Crear vinculos, con propiedades en CSS
 
 encontre que en la pagina index.html en la etiqueta h2encuentranosh2 esta heredado el espacio entre letra y letra, tambine encontre que no heredo 
 
+### dia 4 9/11/2026
+
+### objetivo
+aprender a utilizar e instalar tailwind CSS (CLI) 
+
+### Actividades realizadas 
+Al revisar el archivo output.css generado por la CLI, noté que las clases que utilicé en mi HTML (como bg-blue-600) sí aparecen compiladas. En cambio, al buscar una clase que no utilicé en mi código (como bg-pink-500), esta no se genera en el archivo CSS final. Esto ocurre porque la CLI de Tailwind escanea los archivos del proyecto y aplica un proceso de limpieza (purge), eliminando todo el código que no se está usando para que la página cargue mucho más rápido."
+
 
