@@ -65,6 +65,13 @@ encontre que en la pagina index.html en la etiqueta h2encuentranosh2 esta hereda
 aprender a utilizar e instalar tailwind CSS (CLI) 
 
 ### Actividades realizadas 
-Al revisar el archivo output.css generado por la CLI, noté que las clases que utilicé en mi HTML (como bg-blue-600) sí aparecen compiladas. En cambio, al buscar una clase que no utilicé en mi código (como bg-pink-500), esta no se genera en el archivo CSS final. Esto ocurre porque la CLI de Tailwind escanea los archivos del proyecto y aplica un proceso de limpieza (purge), eliminando todo el código que no se está usando para que la página cargue mucho más rápido."
+ * Al revisar el archivo output.css generado por la CLI, noté que las clases que utilicé en mi HTML (como bg-blue-600) sí aparecen compiladas. En cambio, al buscar una clase que no utilicé en mi código (como bg-pink-500), esta no se genera en el archivo CSS final. Esto ocurre porque la CLI de Tailwind escanea los archivos del proyecto y aplica un proceso de limpieza (purge), eliminando todo el código que no se está usando para que la página cargue mucho más rápido."
+ -## Reglas del Kit de Componentes
+
+* **Radios de borde:** Se decidió utilizar esquinas redondeadas consistentes (`rounded-lg` y `rounded-2xl`) en todos los componentes —botones, cards, alertas y campos de formulario— para mantener una estética visual uniforme.
+* **Espaciado y jerarquía:** Se aplicaron clases de separación estándar (como `gap-4`, `gap-6` y padding uniforme) para asegurar una distancia limpia y ordenada entre los textos, inputs y botones.
+* **Paleta de colores y estados:** Se mantuvo una coherencia cromática utilizando tonos azules para los elementos interactivos principales, y alertas con fondos suaves acompañadas de un borde lateral distintivo para indicar información, éxito y advertencia.
+* **Accesibilidad:** Todos los elementos interactivos (botones y campos de formulario) comparten el mismo comportamiento de `hover` suave y un anillo de foco visible (`focus:ring-4`) para garantizar una correcta navegación por teclado.
+
 
 
