@@ -1,1 +1,33 @@
 @import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap');
+
+@theme {
+  /* Fuentes personalizadas */
+  --font-sans: 'Open Sans', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+
+  /* Colores de la marca */
+  --color-brand-primary: #1d4ed8;   /* Azul principal */
+  --color-brand-dark: #0f172a;      /* Azul oscuro de fondo */
+  --color-brand-yellow: #FFD166;    /* Amarillo Farol solicitado */
+}
+
+
+/* Capa de componentes para limpiar el HTML según el MiniReto 8 */
+@layer components {
+  /* Botón Principal */
+  .btn-primary {
+    @apply w-full bg-blue-600 dark:bg-yellow-500 text-white dark:text-gray-900 font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 dark:hover:bg-yellow-400 text-center transition-colors shadow-md focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-yellow-500/30;
+  }
+
+  /* Botón de Encabezado */
+  .btn-header {
+    @apply bg-blue-600 dark:bg-yellow-500 text-white dark:text-gray-900 font-semibold px-5 py-2.5 rounded-lg hover:bg-blue-700 dark:hover:bg-yellow-400 transition-colors text-sm lg:text-base shadow-md;
+  }
+
+  /* Tarjeta base */
+  .card-base {
+    @apply bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-blue-400 dark:hover:border-yellow-400 flex flex-col justify-between;
+  }
+}

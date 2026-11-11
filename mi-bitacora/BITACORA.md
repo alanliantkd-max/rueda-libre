@@ -112,3 +112,24 @@ Prueba en modo dispositivo a 360 px, 768 px, 1024 px y 1280 px, y registra el co
 
 ### Aprendizaje
 Aprender a adaptar la pagina web con pantallas mobile 
+
+## Comparativa Final: Bootstrap vs Tailwind CSS para Rueda Libre
+
+* **1. Curva de aprendizaje:**
+  * *Bootstrap:* Es más rápida al principio para perfiles junior porque provee componentes prehechos (como `.btn` o `.card`), pero requiere aprenderse clases específicas de su ecosistema.
+  * *Tailwind:* Requiere entender el modelo utilitario (mobile-first), pero a corto plazo ofrece mayor control intuitivo sobre cada propiedad de diseño sin depender de componentes rígidos.
+
+* **2. Personalización:**
+  * *Bootstrap:* Tiende a hacer que todos los sitios web luzcan similares a menos que se sobrescriban extensamente las variables de Sass.
+  * *Tailwind:* Es altamente personalizable mediante el archivo de configuración y directivas como `@theme`, permitiendo integrar los colores de la marca (como el *Amarillo Farol*) y tipografías personalizadas de manera nativa y limpia.
+
+* **3. Tamaño final del archivo (Performance):**
+  * *Bootstrap:* Carga archivos CSS y JavaScript pesados (generalmente varias decenas de kilobytes adicionales de componentes que tal vez no se usen en la landing).
+  * *Tailwind:* Al compilar mediante la CLI con la opción de minificación, genera un archivo CSS optimizado que contiene únicamente las clases estrictamente utilizadas en el proyecto, garantizando una carga veloz en dispositivos móviles.
+
+* **4. Casos de uso:**
+  * *Bootstrap:* Ideal para prototipado rápido en paneles administrativos o proyectos internos donde el diseño visual exacto no es la prioridad principal.
+  * *Tailwind:* Perfecto para landings pages de marketing, branding personalizado y experiencias de usuario altamente responsivas con modo oscuro nativo.
+
+* **Recomendación final para el cliente:**
+  Se recomienda encarecidamente continuar el desarrollo de la siguiente versión de todo el sitio de **Rueda Libre** utilizando **Tailwind CSS**. Esto garantiza una personalización visual única adaptada a la identidad de la marca, un rendimiento superior en celulares (gracias a su arquitectura liviana) y un código mantenible a través de componentes limpios.
