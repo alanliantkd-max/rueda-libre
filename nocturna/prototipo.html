@@ -4,68 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rueda Nocturna - Medellín</title>
-    <!-- Conexión a tu Tailwind CLI -->
+    <!-- Conexión al CSS compilado -->
     <link rel="stylesheet" href="./src/output.css">
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+<body class="bg-gray-50 text-gray-800 font-sans antialiased overflow-x-hidden">
 
-    <!-- 1. ENCABEZADO -->
+    <!-- 1. ENCABEZADO (Apilado en celular, en fila desde md:) -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-2">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-auto py-4 md:py-0 md:h-20 flex flex-col md:flex-row items-center justify-between gap-4">
+            
+            <div class="flex items-center justify-between w-full md:w-auto">
                 <span class="text-xl font-black text-blue-600">RUEDA NOCTURNA</span>
+                <!-- En el celular solo se ve el botón "Inscríbete" -->
+                <a href="#inscripcion" class="md:hidden bg-blue-600 text-white font-semibold px-4 py-2 text-sm rounded-lg hover:bg-blue-700 transition-colors">
+                    Inscríbete
+                </a>
             </div>
-            <nav class="hidden md:flex items-center gap-8 font-medium">
+
+            <!-- Enlaces ocultos en celular (hidden) y visibles en tablet/escritorio (md:flex) -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm lg:text-base">
                 <a href="#rutas" class="hover:text-blue-600 transition-colors">Rutas</a>
                 <a href="#como-funciona" class="hover:text-blue-600 transition-colors">¿Cómo funciona?</a>
                 <a href="#inscripcion" class="hover:text-blue-600 transition-colors">Inscríbete</a>
             </nav>
-            <div>
-                <a href="#inscripcion" class="bg-blue-600 text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-blue-700 transition-colors">
+
+            <!-- Botón del encabezado visible solo en escritorio/tablet (md:block) -->
+            <div class="hidden md:block">
+                <a href="#inscripcion" class="bg-blue-600 text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-blue-700 transition-colors text-sm lg:text-base">
                     Inscríbete
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- CONTENEDOR GENERAL CON ANCHO MÁXIMO Y RELLENO LATERAL -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-16 py-12">
+    <!-- CONTENEDOR GENERAL RESPONSIVO (px-4 en celular, px-6 en sm, px-8 en lg) -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-10 sm:gap-16 py-8 md:py-12">
 
         <!-- 2. SECCIÓN PRINCIPAL (HERO) -->
-        <section class="text-center flex flex-col items-center gap-4 py-8">
-            <span class="bg-green-100 text-green-800 text-sm font-bold px-4 py-1 rounded-full">NUEVO - JUEVES A SÁBADO</span>
-            <h1 class="text-4xl sm:text-6xl font-black text-gray-900 tracking-tight">Rueda Nocturna</h1>
-            <p class="text-lg sm:text-xl text-gray-600 max-w-2xl">En Medellín, la ciudad se enciende en luces. Vive la experiencia de rodar de noche de forma segura.</p>
-            <div class="flex gap-6 mt-4">
+        <section class="text-center flex flex-col items-center gap-3 md:gap-4 py-4 md:py-8">
+            <span class="bg-green-100 text-green-800 text-xs sm:text-sm font-bold px-3 sm:px-4 py-1 rounded-full">NUEVO - JUEVES A SÁBADO</span>
+            <!-- Tamaño de letra responsivo: text-3xl en celular, text-5xl en md, text-6xl en lg -->
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-gray-900 tracking-tight">Rueda Nocturna</h1>
+            <p class="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl px-2">En Medellín, la ciudad se enciende en luces. Vive la experiencia de rodar de noche de forma segura.</p>
+            <div class="flex gap-6 mt-2 md:mt-4">
                 <div class="text-center">
-                    <span class="block text-2xl font-bold text-blue-600">3</span>
-                    <span class="text-sm text-gray-500">Rutas</span>
+                    <span class="block text-xl sm:text-2xl font-bold text-blue-600">3</span>
+                    <span class="text-xs sm:text-sm text-gray-500">Rutas</span>
                 </div>
                 <div class="border-r border-gray-300"></div>
                 <div class="text-center">
-                    <span class="block text-2xl font-bold text-green-600">$55.000</span>
-                    <span class="text-sm text-gray-500">Desde</span>
+                    <span class="block text-xl sm:text-2xl font-bold text-green-600">$55.000</span>
+                    <span class="text-xs sm:text-sm text-gray-500">Desde</span>
                 </div>
             </div>
         </section>
 
-        <!-- 3. SECCIÓN DE RUTAS (3 CARDS EN CUADRÍCULA) -->
-        <section id="rutas" class="flex flex-col gap-8">
+        <!-- 3. SECCIÓN DE RUTAS (Una columna en celular, dos desde sm:, tres desde lg:) -->
+        <section id="rutas" class="flex flex-col gap-6 md:gap-8">
             <div class="text-center">
-                <h2 class="text-3xl font-bold text-gray-900">Rutas de la Campaña</h2>
-                <p class="text-gray-600 mt-2">Todas salen de la sede de Rueda Libre e incluyen bicicleta, casco, luces LED, chaleco reflectivo y guía.</p>
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">Rutas de la Campaña</h2>
+                <p class="text-sm sm:text-base text-gray-600 mt-2">Todas salen de la sede de Rueda Libre e incluyen bicicleta, casco, luces LED, chaleco reflectivo y guía.</p>
             </div>
 
-            <!-- CUADRÍCULA DE 3 COLUMNAS -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- CUADRÍCULA RESPONSIVA: grid-cols-1 -> sm:grid-cols-2 -> lg:grid-cols-3 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                 
                 <!-- Card 1 -->
                 <div class="bg-white border border-gray-200 rounded-2xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-blue-400 flex flex-col justify-between">
                     <div>
-                        <img class="w-full h-48 object-cover" src="./img/ciclaestandar.png" alt="Luces del Centro">
-                        <div class="p-6 flex flex-col gap-4">
+                        <img class="w-full h-40 sm:h-48 object-cover" src="./img/ciclaestandar.png" alt="Luces del Centro">
+                        <div class="p-4 sm:p-6 flex flex-col gap-3 sm:gap-4">
                             <span class="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full self-start">Fácil</span>
-                            <h3 class="text-xl font-bold text-gray-900">Luces del Centro</h3>
+                            <h3 class="text-lg sm:text-xl font-bold text-gray-900">Luces del Centro</h3>
                             <ul class="text-sm text-gray-600 flex flex-col gap-1">
                                 <li><strong class="text-gray-900">Distancia:</strong> 10 km</li>
                                 <li><strong class="text-gray-900">Duración:</strong> 2 h</li>
@@ -73,18 +83,18 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="p-6 pt-0">
-                        <a href="#inscripcion" class="block w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 text-center transition-colors">Inscríbete</a>
+                    <div class="p-4 sm:p-6 pt-0">
+                        <a href="#inscripcion" class="block w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 text-center transition-colors text-sm sm:text-base">Inscríbete</a>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
                 <div class="bg-white border border-gray-200 rounded-2xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-blue-400 flex flex-col justify-between">
                     <div>
-                        <img class="w-full h-48 object-cover" src="./img/ciclaestandar.png" alt="Miradores de la Ciudad">
-                        <div class="p-6 flex flex-col gap-4">
+                        <img class="w-full h-40 sm:h-48 object-cover" src="./img/ciclaestandar.png" alt="Miradores de la Ciudad">
+                        <div class="p-4 sm:p-6 flex flex-col gap-3 sm:gap-4">
                             <span class="bg-yellow-100 text-yellow-800 text-xs font-bold px-3 py-1 rounded-full self-start">Medio</span>
-                            <h3 class="text-xl font-bold text-gray-900">Miradores de la Ciudad</h3>
+                            <h3 class="text-lg sm:text-xl font-bold text-gray-900">Miradores de la Ciudad</h3>
                             <ul class="text-sm text-gray-600 flex flex-col gap-1">
                                 <li><strong class="text-gray-900">Distancia:</strong> 16 km</li>
                                 <li><strong class="text-gray-900">Duración:</strong> 3 h</li>
@@ -92,18 +102,18 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="p-6 pt-0">
-                        <a href="#inscripcion" class="block w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 text-center transition-colors">Inscríbete</a>
+                    <div class="p-4 sm:p-6 pt-0">
+                        <a href="#inscripcion" class="block w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 text-center transition-colors text-sm sm:text-base">Inscríbete</a>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
                 <div class="bg-white border border-gray-200 rounded-2xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-blue-400 flex flex-col justify-between">
                     <div>
-                        <img class="w-full h-48 object-cover" src="./img/ciclaestandar.png" alt="Luna en Las Palmas">
-                        <div class="p-6 flex flex-col gap-4">
+                        <img class="w-full h-40 sm:h-48 object-cover" src="./img/ciclaestandar.png" alt="Luna en Las Palmas">
+                        <div class="p-4 sm:p-6 flex flex-col gap-3 sm:gap-4">
                             <span class="bg-red-100 text-red-800 text-xs font-bold px-3 py-1 rounded-full self-start">Difícil</span>
-                            <h3 class="text-xl font-bold text-gray-900">Luna en Las Palmas</h3>
+                            <h3 class="text-lg sm:text-xl font-bold text-gray-900">Luna en Las Palmas</h3>
                             <ul class="text-sm text-gray-600 flex flex-col gap-1">
                                 <li><strong class="text-gray-900">Distancia:</strong> 22 km</li>
                                 <li><strong class="text-gray-900">Duración:</strong> 3,5 h</li>
@@ -111,62 +121,63 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="p-6 pt-0">
-                        <a href="#inscripcion" class="block w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 text-center transition-colors">Inscríbete</a>
+                    <div class="p-4 sm:p-6 pt-0">
+                        <a href="#inscripcion" class="block w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 text-center transition-colors text-sm sm:text-base">Inscríbete</a>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <!-- 4. SECCIÓN ¿CÓMO FUNCIONA? (4 PASOS) -->
-        <section id="como-funciona" class="flex flex-col gap-8 py-8">
+        <!-- 4. SECCIÓN ¿CÓMO FUNCIONA? (Una columna, dos en sm:, cuatro en lg:) -->
+        <section id="como-funciona" class="flex flex-col gap-6 md:gap-8 py-4 sm:py-8">
             <div class="text-center">
-                <h2 class="text-3xl font-bold text-gray-900">¿Cómo funciona?</h2>
-                <p class="text-gray-600 mt-2">Sigue estos cuatro sencillos pasos para vivir la experiencia.</p>
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">¿Cómo funciona?</h2>
+                <p class="text-sm sm:text-base text-gray-600 mt-2">Sigue estos cuatro sencillos pasos para vivir la experiencia.</p>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm text-center flex flex-col gap-2">
-                    <span class="text-3xl font-black text-blue-600">1</span>
-                    <h3 class="font-bold text-lg">Elige tu ruta</h3>
-                    <p class="text-sm text-gray-600">Selecciona el nivel que mejor se adapte a tu condición física.</p>
+            <!-- CUADRÍCULA RESPONSIVA: grid-cols-1 -> sm:grid-cols-2 -> lg:grid-cols-4 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                <div class="bg-white p-5 sm:p-6 rounded-xl border border-gray-200 shadow-sm text-center flex flex-col gap-2">
+                    <span class="text-2xl sm:text-3xl font-black text-blue-600">1</span>
+                    <h3 class="font-bold text-base sm:text-lg">Elige tu ruta</h3>
+                    <p class="text-xs sm:text-sm text-gray-600">Selecciona el nivel que mejor se adapte a tu condición física.</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm text-center flex flex-col gap-2">
-                    <span class="text-3xl font-black text-blue-600">2</span>
-                    <h3 class="font-bold text-lg">Inscríbete</h3>
-                    <p class="text-sm text-gray-600">Llena tus datos de contacto para apartar tu cupo.</p>
+                <div class="bg-white p-5 sm:p-6 rounded-xl border border-gray-200 shadow-sm text-center flex flex-col gap-2">
+                    <span class="text-2xl sm:text-3xl font-black text-blue-600">2</span>
+                    <h3 class="font-bold text-base sm:text-lg">Inscríbete</h3>
+                    <p class="text-xs sm:text-sm text-gray-600">Llena tus datos de contacto para apartar tu cupo.</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm text-center flex flex-col gap-2">
-                    <span class="text-3xl font-black text-blue-600">3</span>
-                    <h3 class="font-black text-blue-600 text-lg">Recoge tu equipo</h3>
-                    <p class="text-sm text-gray-600">Llega a la sede por tu bicicleta, casco y luces LED.</p>
+                <div class="bg-white p-5 sm:p-6 rounded-xl border border-gray-200 shadow-sm text-center flex flex-col gap-2">
+                    <span class="text-2xl sm:text-3xl font-black text-blue-600">3</span>
+                    <h3 class="font-bold text-base sm:text-lg">Recoge tu equipo</h3>
+                    <p class="text-xs sm:text-sm text-gray-600">Llega a la sede por tu bicicleta, casco y luces LED.</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm text-center flex flex-col gap-2">
-                    <span class="text-3xl font-black text-blue-600">4</span>
-                    <h3 class="font-bold text-lg">Rueda</h3>
-                    <p class="text-sm text-gray-600">Disfruta de la rodada nocturna guiada por la ciudad.</p>
+                <div class="bg-white p-5 sm:p-6 rounded-xl border border-gray-200 shadow-sm text-center flex flex-col gap-2">
+                    <span class="text-2xl sm:text-3xl font-black text-blue-600">4</span>
+                    <h3 class="font-bold text-base sm:text-lg">Rueda</h3>
+                    <p class="text-xs sm:text-sm text-gray-600">Disfruta de la rodada nocturna guiada por la ciudad.</p>
                 </div>
             </div>
         </section>
 
         <!-- 5. FRANJA DE INSCRIPCIÓN -->
-        <section id="inscripcion" class="bg-blue-900 text-white rounded-3xl p-8 sm:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
+        <section id="inscripcion" class="bg-blue-900 text-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
             <div class="flex flex-col gap-2">
-                <h2 class="text-3xl font-bold">¿Listo para rodar con nosotros?</h2>
-                <p class="text-blue-200">Aparte tu cupo hoy mismo y vive la magia de Medellín de noche.</p>
+                <h2 class="text-2xl sm:text-3xl font-bold">¿Listo para rodar con nosotros?</h2>
+                <p class="text-sm sm:text-base text-blue-200">Aparta tu cupo hoy mismo y vive la magia de Medellín de noche.</p>
             </div>
-            <a href="componentes.html" class="bg-green-500 text-white font-bold px-8 py-3 rounded-xl hover:bg-green-600 transition-colors shadow-lg">
-                Ir al Formulario de Inscripción
+            <a href="componentes.html" class="w-full md:w-auto bg-green-500 text-white font-bold px-6 sm:px-8 py-3 rounded-xl hover:bg-green-600 transition-colors shadow-lg text-center text-sm sm:text-base">
+                Ir al Formulario
             </a>
         </section>
 
     </main>
 
     <!-- 6. PIE DE PÁGINA -->
-    <footer class="bg-white border-t border-gray-200 py-8 mt-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+    <footer class="bg-white border-t border-gray-200 py-6 sm:py-8 mt-8 sm:mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-gray-500">
             <p>&copy; 2026 Rueda Libre. Todos los derechos reservados.</p>
-            <div class="flex gap-6">
+            <div class="flex gap-4 sm:gap-6">
                 <a href="#rutas" class="hover:text-blue-600">Rutas</a>
                 <a href="#como-funciona" class="hover:text-blue-600">¿Cómo funciona?</a>
                 <a href="componentes.html" class="hover:text-blue-600">Componentes</a>

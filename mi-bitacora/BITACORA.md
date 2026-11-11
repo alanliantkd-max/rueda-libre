@@ -100,3 +100,15 @@ Justificación de Grid vs Flex en la Landing
 
 ### Proximo paso
 Realizar el entregable dos de la semana tres dia dos
+
+
+###  dia 6 10/11/2026
+
+### Objetivos
+Adaptar la pagina web con pantallas mobile 
+
+### Actividades realizadas
+Prueba en modo dispositivo a 360 px, 768 px, 1024 px y 1280 px, y registra el comportamiento en una tabla en la bitácora.
+
+### Aprendizaje
+Aprender a adaptar la pagina web con pantallas mobile 
