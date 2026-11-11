@@ -74,4 +74,29 @@ aprender a utilizar e instalar tailwind CSS (CLI)
 * **Accesibilidad:** Todos los elementos interactivos (botones y campos de formulario) comparten el mismo comportamiento de `hover` suave y un anillo de foco visible (`focus:ring-4`) para garantizar una correcta navegación por teclado.
 
 
+### Aprendizaje
+aprendi a hacer estas acciones que estan realizadas arriba 
 
+### Proximo paso
+realizar los entregables de la semana tres del dia dos
+
+
+
+### Dia 5 - 10/11/2026
+
+### objetivo
+realizar otro prototipo.html (crear una nueva pagina) con todas las especificaciones  
+
+### Actividades realizdas 
+Cambiar el prototipo.html con estos requisitos
+Encabezado (<header>) con logo, enlaces con anclas (#rutas, #como-funciona, #inscripcion) y botón.  
+Sección Principal / Hero (<section>) con el título de la campaña.  
+Sección de Rutas (<section id="rutas">) con tus 3 cards organizadas en una cuadrícula de 3 columnas (grid grid-cols-1 md:grid-cols-3).   
+Sección ¿Cómo funciona? (<section id="como-funciona">) con los 4 pasos en columnas.   Franja de inscripción (<section id="inscripcion">).   Pie de página (<footer>).  
+
+Justificación de Grid vs Flex en la Landing
+* **¿Por qué se usó `grid` para las rutas y los pasos?** Se eligió la utilidad `grid` (específicamente `grid-cols-1 md:grid-cols-3` y `lg:grid-cols-4`) porque permite organizar los elementos de manera uniforme tanto en filas como en columnas de forma automática y limpia, adaptándose perfectamente a pantallas grandes y dispositivos móviles sin necesidad de escribir código CSS adicional.
+* **¿Cuándo se usó `flex`?** Se utilizó `flex` para elementos en una sola dirección, como la barra de navegación del encabezado, el alineado de los botones y la distribución del pie de página.
+
+### Proximo paso
+Realizar el entregable dos de la semana tres dia dos

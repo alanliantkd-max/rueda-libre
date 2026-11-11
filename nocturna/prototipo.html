@@ -1,172 +1,178 @@
-
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Rueda Nocturna</title>
-
-    <!-- Conectar Tailwind CSS -->
-  <link rel="stylesheet" href="./src/output.css">
-
+    <title>Rueda Nocturna - Medellín</title>
+    <!-- Conexión a tu Tailwind CLI -->
+    <link rel="stylesheet" href="./src/output.css">
 </head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
 
-<body class="bg-gray-900 text-white">
-
-    <!-- CONTENIDO PRINCIPAL -->
-    <main class="min-h-screen flex justify-center items-center p-6">
-
-    <main class="flex flex-col items-center gap-6 p-8">
-
-    <!-- ========================================== -->
-    <!-- 1. CARD: LUCES DEL CENTRO (Nivel: Fácil)    -->
-    <!-- ========================================== -->
-    <div class="max-w-sm w-full bg-white border border-gray-200 rounded-2xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-blue-400">
-        <img class="w-full h-48 object-cover" src="./img/ciclaestandar.png" alt="Ruta Luces del Centro">
-        <div class="p-6 flex flex-col gap-4">
-            <div>
-                <span class="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full">
-                    Fácil
-                </span>
+    <!-- 1. ENCABEZADO -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="text-xl font-black text-blue-600">RUEDA NOCTURNA</span>
             </div>
-            <h3 class="text-xl font-bold text-gray-900">Luces del Centro</h3>
-            <ul class="text-sm text-gray-600 flex flex-col gap-1">
-                <li><strong class="text-gray-900">Distancia:</strong> 10 km</li>
-                <li><strong class="text-gray-900">Duración:</strong> 2 h</li>
-                <li><strong class="text-gray-900">Precio:</strong> $55.000</li>
-            </ul>
-            <button class="w-full bg-blue-600 text-white font-semibold px-6 py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-colors text-center">
-                Inscríbete
-            </button>
-        </div>
-    </div>
-
-    <!-- ========================================== -->
-    <!-- 2. CARD: MIRADORES DE LA CIUDAD (Medio)   -->
-    <!-- ========================================== -->
-    <div class="max-w-sm w-full bg-white border border-gray-200 rounded-2xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-blue-400">
-        <img class="w-full h-48 object-cover" src="./img/ciclaestandar.png" alt="Ruta Miradores de la Ciudad">
-        <div class="p-6 flex flex-col gap-4">
+            <nav class="hidden md:flex items-center gap-8 font-medium">
+                <a href="#rutas" class="hover:text-blue-600 transition-colors">Rutas</a>
+                <a href="#como-funciona" class="hover:text-blue-600 transition-colors">¿Cómo funciona?</a>
+                <a href="#inscripcion" class="hover:text-blue-600 transition-colors">Inscríbete</a>
+            </nav>
             <div>
-                <span class="bg-yellow-100 text-yellow-800 text-xs font-bold px-3 py-1 rounded-full">
-                    Medio
-                </span>
+                <a href="#inscripcion" class="bg-blue-600 text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-blue-700 transition-colors">
+                    Inscríbete
+                </a>
             </div>
-            <h3 class="text-xl font-bold text-gray-900">Miradores de la Ciudad</h3>
-            <ul class="text-sm text-gray-600 flex flex-col gap-1">
-                <li><strong class="text-gray-900">Distancia:</strong> 16 km</li>
-                <li><strong class="text-gray-900">Duración:</strong> 3 h</li>
-                <li><strong class="text-gray-900">Precio:</strong> $75.000</li>
-            </ul>
-            <button class="w-full bg-blue-600 text-white font-semibold px-6 py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-colors text-center">
-                Inscríbete
-            </button>
         </div>
-    </div>
+    </header>
 
-    <!-- ========================================== -->
-    <!-- 3. CARD: LUNA EN LAS PALMAS (Difícil)     -->
-    <!-- ========================================== -->
-    <div class="max-w-sm w-full bg-white border border-gray-200 rounded-2xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-blue-400">
-        <img class="w-full h-48 object-cover" src="./img/ciclaestandar.png" alt="Ruta Luna en Las Palmas">
-        <div class="p-6 flex flex-col gap-4">
-            <div>
-                <span class="bg-red-100 text-red-800 text-xs font-bold px-3 py-1 rounded-full">
-                    Difícil
-                </span>
+    <!-- CONTENEDOR GENERAL CON ANCHO MÁXIMO Y RELLENO LATERAL -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-16 py-12">
+
+        <!-- 2. SECCIÓN PRINCIPAL (HERO) -->
+        <section class="text-center flex flex-col items-center gap-4 py-8">
+            <span class="bg-green-100 text-green-800 text-sm font-bold px-4 py-1 rounded-full">NUEVO - JUEVES A SÁBADO</span>
+            <h1 class="text-4xl sm:text-6xl font-black text-gray-900 tracking-tight">Rueda Nocturna</h1>
+            <p class="text-lg sm:text-xl text-gray-600 max-w-2xl">En Medellín, la ciudad se enciende en luces. Vive la experiencia de rodar de noche de forma segura.</p>
+            <div class="flex gap-6 mt-4">
+                <div class="text-center">
+                    <span class="block text-2xl font-bold text-blue-600">3</span>
+                    <span class="text-sm text-gray-500">Rutas</span>
+                </div>
+                <div class="border-r border-gray-300"></div>
+                <div class="text-center">
+                    <span class="block text-2xl font-bold text-green-600">$55.000</span>
+                    <span class="text-sm text-gray-500">Desde</span>
+                </div>
             </div>
-            <h3 class="text-xl font-bold text-gray-900">Luna en Las Palmas</h3>
-            <ul class="text-sm text-gray-600 flex flex-col gap-1">
-                <li><strong class="text-gray-900">Distancia:</strong> 22 km</li>
-                <li><strong class="text-gray-900">Duración:</strong> 3,5 h</li>
-                <li><strong class="text-gray-900">Precio:</strong> $95.000</li>
-            </ul>
-            <button class="w-full bg-blue-600 text-white font-semibold px-6 py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-colors text-center">
-                Inscríbete
-            </button>
-        </div>
-    </div>
+        </section>
 
-</main>
-        
-        <!-- SECCION PRINCIPAL -->
-        <section class="text-center">
+        <!-- 3. SECCIÓN DE RUTAS (3 CARDS EN CUADRÍCULA) -->
+        <section id="rutas" class="flex flex-col gap-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-gray-900">Rutas de la Campaña</h2>
+                <p class="text-gray-600 mt-2">Todas salen de la sede de Rueda Libre e incluyen bicicleta, casco, luces LED, chaleco reflectivo y guía.</p>
+            </div>
 
-            <!-- ETIQUETA DE CAMPAÑA -->
-            <p class="text-green-400 font-bold uppercase">
-                Nuevo - Jueves a sábado
-            </p>
-
-            <!-- TITULO PRINCIPAL -->
-            <h1 class="text-5xl font-bold mt-4">
-                Rueda Nocturna
-            </h1>
-
-            <!-- SUBTITULO -->
-            <p class="text-gray-300 text-xl mt-4">
-                En Medellín, la ciudad se enciende en luces.
-            </p>
-
-            <!-- DATOS DESTACADOS -->
-            <div class="flex justify-center gap-10 mt-8">
-
-                <!-- PRIMER DATO -->
-                <div>
-                    <h2 class="text-3xl font-bold text-green-400">
-                        3
-                    </h2>
-
-                    <p class="text-gray-300">
-                        Rutas
-                    </p>
+            <!-- CUADRÍCULA DE 3 COLUMNAS -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-white border border-gray-200 rounded-2xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-blue-400 flex flex-col justify-between">
+                    <div>
+                        <img class="w-full h-48 object-cover" src="./img/ciclaestandar.png" alt="Luces del Centro">
+                        <div class="p-6 flex flex-col gap-4">
+                            <span class="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full self-start">Fácil</span>
+                            <h3 class="text-xl font-bold text-gray-900">Luces del Centro</h3>
+                            <ul class="text-sm text-gray-600 flex flex-col gap-1">
+                                <li><strong class="text-gray-900">Distancia:</strong> 10 km</li>
+                                <li><strong class="text-gray-900">Duración:</strong> 2 h</li>
+                                <li><strong class="text-gray-900">Precio:</strong> $55.000</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#inscripcion" class="block w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 text-center transition-colors">Inscríbete</a>
+                    </div>
                 </div>
 
-                <!-- SEGUNDO DATO -->
-                <div>
-                    <h2 class="text-3xl font-bold text-green-400">
-                        $55.000
-                    </h2>
-
-                    <p class="text-gray-300">
-                        Desde
-                    </p>
+                <!-- Card 2 -->
+                <div class="bg-white border border-gray-200 rounded-2xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-blue-400 flex flex-col justify-between">
+                    <div>
+                        <img class="w-full h-48 object-cover" src="./img/ciclaestandar.png" alt="Miradores de la Ciudad">
+                        <div class="p-6 flex flex-col gap-4">
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-bold px-3 py-1 rounded-full self-start">Medio</span>
+                            <h3 class="text-xl font-bold text-gray-900">Miradores de la Ciudad</h3>
+                            <ul class="text-sm text-gray-600 flex flex-col gap-1">
+                                <li><strong class="text-gray-900">Distancia:</strong> 16 km</li>
+                                <li><strong class="text-gray-900">Duración:</strong> 3 h</li>
+                                <li><strong class="text-gray-900">Precio:</strong> $75.000</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#inscripcion" class="block w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 text-center transition-colors">Inscríbete</a>
+                    </div>
                 </div>
-             <div class="flex flex-col gap-4 p-8 items-start">
-    
-             <!-- 1. Botón Principal (Primary) -->
-                   <button class="bg-blue-600 text-white font-semibold px-6 py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-colors">
-                  Botón Principal
-                  </button>
 
-             <!-- 2. Botón Secundario (Secondary) -->
-                  <button class="bg-gray-200 text-gray-800 font-semibold px-6 py-2 rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-4 focus:ring-gray-400 transition-colors">
-                   Botón Secundario
-                 </button>
-
-             <!-- 3. Botón de Contorno (Outline) -->
-                  <button class="border-2 border-blue-600 text-blue-600 font-semibold px-6 py-2 rounded-lg hover:bg-blue-50 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-colors">
-                  Botón de Contorno
-                 </button>
+                <!-- Card 3 -->
+                <div class="bg-white border border-gray-200 rounded-2xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-blue-400 flex flex-col justify-between">
+                    <div>
+                        <img class="w-full h-48 object-cover" src="./img/ciclaestandar.png" alt="Luna en Las Palmas">
+                        <div class="p-6 flex flex-col gap-4">
+                            <span class="bg-red-100 text-red-800 text-xs font-bold px-3 py-1 rounded-full self-start">Difícil</span>
+                            <h3 class="text-xl font-bold text-gray-900">Luna en Las Palmas</h3>
+                            <ul class="text-sm text-gray-600 flex flex-col gap-1">
+                                <li><strong class="text-gray-900">Distancia:</strong> 22 km</li>
+                                <li><strong class="text-gray-900">Duración:</strong> 3,5 h</li>
+                                <li><strong class="text-gray-900">Precio:</strong> $95.000</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#inscripcion" class="block w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 text-center transition-colors">Inscríbete</a>
+                    </div>
+                </div>
 
             </div>
+        </section>
 
+        <!-- 4. SECCIÓN ¿CÓMO FUNCIONA? (4 PASOS) -->
+        <section id="como-funciona" class="flex flex-col gap-8 py-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-gray-900">¿Cómo funciona?</h2>
+                <p class="text-gray-600 mt-2">Sigue estos cuatro sencillos pasos para vivir la experiencia.</p>
             </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm text-center flex flex-col gap-2">
+                    <span class="text-3xl font-black text-blue-600">1</span>
+                    <h3 class="font-bold text-lg">Elige tu ruta</h3>
+                    <p class="text-sm text-gray-600">Selecciona el nivel que mejor se adapte a tu condición física.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm text-center flex flex-col gap-2">
+                    <span class="text-3xl font-black text-blue-600">2</span>
+                    <h3 class="font-bold text-lg">Inscríbete</h3>
+                    <p class="text-sm text-gray-600">Llena tus datos de contacto para apartar tu cupo.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm text-center flex flex-col gap-2">
+                    <span class="text-3xl font-black text-blue-600">3</span>
+                    <h3 class="font-black text-blue-600 text-lg">Recoge tu equipo</h3>
+                    <p class="text-sm text-gray-600">Llega a la sede por tu bicicleta, casco y luces LED.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm text-center flex flex-col gap-2">
+                    <span class="text-3xl font-black text-blue-600">4</span>
+                    <h3 class="font-bold text-lg">Rueda</h3>
+                    <p class="text-sm text-gray-600">Disfruta de la rodada nocturna guiada por la ciudad.</p>
+                </div>
+            </div>
+        </section>
 
-            <!-- BOTON DE INSCRIPCION -->
-            <a href="#reservas"
-               class="inline-block bg-green-500 text-white font-bold px-8 py-4 rounded-lg mt-8">
-
-                Inscríbete
-
+        <!-- 5. FRANJA DE INSCRIPCIÓN -->
+        <section id="inscripcion" class="bg-blue-900 text-white rounded-3xl p-8 sm:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="flex flex-col gap-2">
+                <h2 class="text-3xl font-bold">¿Listo para rodar con nosotros?</h2>
+                <p class="text-blue-200">Aparte tu cupo hoy mismo y vive la magia de Medellín de noche.</p>
+            </div>
+            <a href="componentes.html" class="bg-green-500 text-white font-bold px-8 py-3 rounded-xl hover:bg-green-600 transition-colors shadow-lg">
+                Ir al Formulario de Inscripción
             </a>
-        
-        
-
         </section>
 
     </main>
+
+    <!-- 6. PIE DE PÁGINA -->
+    <footer class="bg-white border-t border-gray-200 py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+            <p>&copy; 2026 Rueda Libre. Todos los derechos reservados.</p>
+            <div class="flex gap-6">
+                <a href="#rutas" class="hover:text-blue-600">Rutas</a>
+                <a href="#como-funciona" class="hover:text-blue-600">¿Cómo funciona?</a>
+                <a href="componentes.html" class="hover:text-blue-600">Componentes</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
